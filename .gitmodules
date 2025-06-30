@@ -1,0 +1,3 @@
+[submodule "submodule/cshields"]
+	path = submodule/cshields
+	url = https://github.com/zawa-ch/cshields
