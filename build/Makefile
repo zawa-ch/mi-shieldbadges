@@ -5,6 +5,8 @@ all: brands httpstatus
 clean-all: clean generator.clean; -rm .pre .preflight-check; cmake --build build/ --target clean
 clean: generator.clean brands.clean httpstatus.clean
 prepare: .pre;
+all-svg: brands.svg httpstatus.svg;
+all-png: brands.png httpstatus.png;
 
 ## Prepare -------------------------- ##
 ## ビルドに使用するジェネレータなどの準備
@@ -35,11 +37,13 @@ help:
 	@echo "Build ShieldBadges"
 	@echo ""
 	@echo "* Root targets:"
-	@echo "|* all (default)"
-	@echo "|* clean"
-	@echo "|* clean-all"
-	@echo "|* prepare"
-	@echo "|* help"
+	@echo "|* all       - build all (default)"
+	@echo "|* clean     - default clean"
+	@echo "|* clean-all - clean completely"
+	@echo "|* prepare   - prepare for build assets"
+	@echo "|* all-svg   - build all svg assets"
+	@echo "|* all-png   - build all png assets"
+	@echo "|* help      - show this help"
 	@echo ""
 	@echo "* Categories:"
 	@echo "| {category}, {category}.clean, {category}.svg, and {category}.png respectively"
@@ -50,4 +54,4 @@ include brands.mk
 include httpstatus.mk
 
 ## ---------------------------------- ##
-.PHONY: all clean-all clean prepare help
+.PHONY: all clean-all clean prepare all-svg all-png help
