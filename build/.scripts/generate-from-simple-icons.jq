@@ -1433,6 +1433,7 @@ def detect_fg:
 	end
 ;
 [
+	"# ShieldBadges makefile\n# !!!!! WARNING: DO NOT EDIT !!!!!\n# generated content, modification will overwrited\n",
 	"brands.svg="+(map("brands.svg/\(.slug // (.title | title_to_slug)).svg")|join(" ")),
 	"brands.png="+(map("brands.png/\(.slug // (.title | title_to_slug)).png")|join(" ")),
 	"",
