@@ -2,7 +2,7 @@
 
 ## Root targets --------------------- ##
 all: brands httpstatus
-clean-all: clean generator.clean; -rm .pre .preflight-check
+clean-all: clean generator.clean; -rm .pre .preflight-check; cmake --build build/ --target clean
 clean: generator.clean brands.clean httpstatus.clean
 prepare: .pre;
 
