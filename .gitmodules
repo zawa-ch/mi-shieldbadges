@@ -1,3 +1,6 @@
 [submodule "submodule/cshields"]
 	path = submodule/cshields
 	url = https://github.com/zawa-ch/cshields
+[submodule "submodule/simple-icons"]
+	path = submodule/simple-icons
+	url = https://github.com/simple-icons/simple-icons
