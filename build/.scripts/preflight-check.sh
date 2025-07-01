@@ -1,7 +1,7 @@
 #! /bin/bash
 
 preflight-check() {
-	local -r PRE_REQUISITES=("curl" "jq" "xq" "resvg"); local -i result=0
+	local -r PRE_REQUISITES=("jq" "xq" "resvg"); local -i result=0
 	locate() { local o=""; o=$(which "$1") && printf "found %s: %s\n" "$1" "$o"; }
 	for i in "${PRE_REQUISITES[@]}"; do locate "$i" || result=1; done
 	return $result
