@@ -1,0 +1,810 @@
+{
+	"name": "httpstatus",
+	"category": "shields/HTTPStatusCode",
+	"license": "CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/legalcode), see https://github.com/zawa-ch/mi-shieldbadges",
+	"emojis": [
+		{
+			"name": "http_100",
+			"aliases": [
+				"HTTP-100",
+				"Continue"
+			],
+			"shield": {
+				"label": "HTTP 100",
+				"message": "Continue",
+				"color": "blue"
+			}
+		},
+		{
+			"name": "http_101",
+			"aliases": [
+				"HTTP-101",
+				"Switching Protocols"
+			],
+			"shield": {
+				"label": "HTTP 101",
+				"message": "Switching Protocols",
+				"color": "blue"
+			}
+		},
+		{
+			"name": "http_102",
+			"aliases": [
+				"HTTP-102",
+				"Processing"
+			],
+			"shield": {
+				"label": "HTTP 102",
+				"message": "Processing",
+				"color": "blue"
+			}
+		},
+		{
+			"name": "http_103",
+			"aliases": [
+				"HTTP-103",
+				"Early Hints"
+			],
+			"shield": {
+				"label": "HTTP 103",
+				"message": "Early Hints",
+				"color": "blue"
+			}
+		},
+		{
+			"name": "http_104",
+			"aliases": [
+				"HTTP-104",
+				"Upload Resumption Supported"
+			],
+			"shield": {
+				"label": "HTTP 104",
+				"message": "Upload Resumption Supported",
+				"color": "blue"
+			}
+		},
+		{
+			"name": "http_200",
+			"aliases": [
+				"HTTP-200",
+				"OK"
+			],
+			"shield": {
+				"label": "HTTP 200",
+				"message": "OK",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_201",
+			"aliases": [
+				"HTTP-201",
+				"Created"
+			],
+			"shield": {
+				"label": "HTTP 201",
+				"message": "Created",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_202",
+			"aliases": [
+				"HTTP-202",
+				"Accepted"
+			],
+			"shield": {
+				"label": "HTTP 202",
+				"message": "Accepted",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_203",
+			"aliases": [
+				"HTTP-203",
+				"Non-Authoritative Information"
+			],
+			"shield": {
+				"label": "HTTP 203",
+				"message": "Non-Authoritative Information",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_204",
+			"aliases": [
+				"HTTP-204",
+				"No Content"
+			],
+			"shield": {
+				"label": "HTTP 204",
+				"message": "No Content",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_205",
+			"aliases": [
+				"HTTP-205",
+				"Reset Content"
+			],
+			"shield": {
+				"label": "HTTP 205",
+				"message": "Reset Content",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_206",
+			"aliases": [
+				"HTTP-206",
+				"Partial Content"
+			],
+			"shield": {
+				"label": "HTTP 206",
+				"message": "Partial Content",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_207",
+			"aliases": [
+				"HTTP-207",
+				"Multi-Status"
+			],
+			"shield": {
+				"label": "HTTP 207",
+				"message": "Multi-Status",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_208",
+			"aliases": [
+				"HTTP-208",
+				"Already Reported"
+			],
+			"shield": {
+				"label": "HTTP 208",
+				"message": "Already Reported",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_226",
+			"aliases": [
+				"HTTP-226",
+				"IM Used"
+			],
+			"shield": {
+				"label": "HTTP 226",
+				"message": "IM Used",
+				"color": "success"
+			}
+		},
+		{
+			"name": "http_300",
+			"aliases": [
+				"HTTP-300",
+				"Multiple Choices"
+			],
+			"shield": {
+				"label": "HTTP 300",
+				"message": "Multiple Choices",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_301",
+			"aliases": [
+				"HTTP-301",
+				"Moved Permanently"
+			],
+			"shield": {
+				"label": "HTTP 301",
+				"message": "Moved Permanently",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_302",
+			"aliases": [
+				"HTTP-302",
+				"Found"
+			],
+			"shield": {
+				"label": "HTTP 302",
+				"message": "Found",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_303",
+			"aliases": [
+				"HTTP-303",
+				"See Other"
+			],
+			"shield": {
+				"label": "HTTP 303",
+				"message": "See Other",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_304",
+			"aliases": [
+				"HTTP-304",
+				"Not Modified"
+			],
+			"shield": {
+				"label": "HTTP 304",
+				"message": "Not Modified",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_305",
+			"aliases": [
+				"HTTP-305",
+				"Use Proxy"
+			],
+			"shield": {
+				"label": "HTTP 305",
+				"message": "Use Proxy",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_306",
+			"aliases": [
+				"HTTP-306"
+			],
+			"shield": {
+				"label": "HTTP 306",
+				"message": "(unused)",
+				"color": "inactive"
+			}
+		},
+		{
+			"name": "http_307",
+			"aliases": [
+				"HTTP-307",
+				"Temporary Redirect"
+			],
+			"shield": {
+				"label": "HTTP 307",
+				"message": "Temporary Redirect",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_308",
+			"aliases": [
+				"HTTP-308",
+				"Permanent Redirect"
+			],
+			"shield": {
+				"label": "HTTP 308",
+				"message": "Permanent Redirect",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_350",
+			"aliases": [
+				"HTTP-350",
+				"Resolution Delegated"
+			],
+			"shield": {
+				"label": "HTTP 350",
+				"message": "Resolution Delegated",
+				"color": "yellow"
+			}
+		},
+		{
+			"name": "http_400",
+			"aliases": [
+				"HTTP-400",
+				"Bad Request"
+			],
+			"shield": {
+				"label": "HTTP 400",
+				"message": "Bad Request",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_401",
+			"aliases": [
+				"HTTP-401",
+				"Unauthorized"
+			],
+			"shield": {
+				"label": "HTTP 401",
+				"message": "Unauthorized",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_402",
+			"aliases": [
+				"HTTP-402",
+				"Payment Required"
+			],
+			"shield": {
+				"label": "HTTP 402",
+				"message": "Payment Required",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_403",
+			"aliases": [
+				"HTTP-403",
+				"Forbidden"
+			],
+			"shield": {
+				"label": "HTTP 403",
+				"message": "Forbidden",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_404",
+			"aliases": [
+				"HTTP-404",
+				"Not Found"
+			],
+			"shield": {
+				"label": "HTTP 404",
+				"message": "Not Found",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_405",
+			"aliases": [
+				"HTTP-405",
+				"Method Not Allowed"
+			],
+			"shield": {
+				"label": "HTTP 405",
+				"message": "Method Not Allowed",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_406",
+			"aliases": [
+				"HTTP-406",
+				"Not Acceptable"
+			],
+			"shield": {
+				"label": "HTTP 406",
+				"message": "Not Acceptable",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_407",
+			"aliases": [
+				"HTTP-407",
+				"Proxy Authentication Required"
+			],
+			"shield": {
+				"label": "HTTP 407",
+				"message": "Proxy Authentication Required",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_408",
+			"aliases": [
+				"HTTP-408",
+				"Request Timeout"
+			],
+			"shield": {
+				"label": "HTTP 408",
+				"message": "Request Timeout",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_409",
+			"aliases": [
+				"HTTP-409",
+				"Conflict"
+			],
+			"shield": {
+				"label": "HTTP 409",
+				"message": "Conflict",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_410",
+			"aliases": [
+				"HTTP-410",
+				"Gone"
+			],
+			"shield": {
+				"label": "HTTP 410",
+				"message": "Gone",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_411",
+			"aliases": [
+				"HTTP-411",
+				"Length Required"
+			],
+			"shield": {
+				"label": "HTTP 411",
+				"message": "Length Required",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_412",
+			"aliases": [
+				"HTTP-412",
+				"Precondition Failed"
+			],
+			"shield": {
+				"label": "HTTP 412",
+				"message": "Precondition Failed",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_413",
+			"aliases": [
+				"HTTP-413",
+				"Content Too Large"
+			],
+			"shield": {
+				"label": "HTTP 413",
+				"message": "Content Too Large",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_414",
+			"aliases": [
+				"HTTP-414",
+				"URI Too Long"
+			],
+			"shield": {
+				"label": "HTTP 414",
+				"message": "URI Too Long",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_415",
+			"aliases": [
+				"HTTP-415",
+				"Unsupported Media Type"
+			],
+			"shield": {
+				"label": "HTTP 415",
+				"message": "Unsupported Media Type",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_416",
+			"aliases": [
+				"HTTP-416",
+				"Range Not Satisfiable"
+			],
+			"shield": {
+				"label": "HTTP 416",
+				"message": "Range Not Satisfiable",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_417",
+			"aliases": [
+				"HTTP-417",
+				"Expectation Failed"
+			],
+			"shield": {
+				"label": "HTTP 417",
+				"message": "Expectation Failed",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_418",
+			"aliases": [
+				"HTTP-418",
+				"I'm a teapot"
+			],
+			"shield": {
+				"label": "HTTP 418",
+				"message": "I'm a teapot",
+				"color": "inactive"
+			}
+		},
+		{
+			"name": "http_419",
+			"aliases": [
+				"HTTP-419",
+				"Invalid CSRF tokens"
+			],
+			"shield": {
+				"label": "HTTP 419",
+				"message": "Invalid CSRF tokens",
+				"color": "inactive"
+			}
+		},
+		{
+			"name": "http_421",
+			"aliases": [
+				"HTTP-421",
+				"Misdirected Request"
+			],
+			"shield": {
+				"label": "HTTP 421",
+				"message": "Misdirected Request",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_422",
+			"aliases": [
+				"HTTP-422",
+				"Unprocessable Content"
+			],
+			"shield": {
+				"label": "HTTP 422",
+				"message": "Unprocessable Content",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_423",
+			"aliases": [
+				"HTTP-423",
+				"Locked"
+			],
+			"shield": {
+				"label": "HTTP 423",
+				"message": "Locked",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_424",
+			"aliases": [
+				"HTTP-424",
+				"Failed Dependency"
+			],
+			"shield": {
+				"label": "HTTP 424",
+				"message": "Failed Dependency",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_425",
+			"aliases": [
+				"HTTP-425",
+				"Too Early"
+			],
+			"shield": {
+				"label": "HTTP 425",
+				"message": "Too Early",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_426",
+			"aliases": [
+				"HTTP-426",
+				"Upgrade Required"
+			],
+			"shield": {
+				"label": "HTTP 426",
+				"message": "Upgrade Required",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_428",
+			"aliases": [
+				"HTTP-428",
+				"Precondition Required"
+			],
+			"shield": {
+				"label": "HTTP 428",
+				"message": "Precondition Required",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_429",
+			"aliases": [
+				"HTTP-429",
+				"Too Many Requests"
+			],
+			"shield": {
+				"label": "HTTP 429",
+				"message": "Too Many Requests",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_431",
+			"aliases": [
+				"HTTP-431",
+				"Request Header Fields Too Large"
+			],
+			"shield": {
+				"label": "HTTP 431",
+				"message": "Request Header Fields Too Large",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_451",
+			"aliases": [
+				"HTTP-451",
+				"Unavailable For Legal Reasons"
+			],
+			"shield": {
+				"label": "HTTP 451",
+				"message": "Unavailable For Legal Reasons",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_500",
+			"aliases": [
+				"HTTP-500",
+				"Internal Server Error"
+			],
+			"shield": {
+				"label": "HTTP 500",
+				"message": "Internal Server Error",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_501",
+			"aliases": [
+				"HTTP-501",
+				"Not Implemented"
+			],
+			"shield": {
+				"label": "HTTP 501",
+				"message": "Not Implemented",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_502",
+			"aliases": [
+				"HTTP-502",
+				"Bad Gateway"
+			],
+			"shield": {
+				"label": "HTTP 502",
+				"message": "Bad Gateway",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_503",
+			"aliases": [
+				"HTTP-503",
+				"Service Unavailable"
+			],
+			"shield": {
+				"label": "HTTP 503",
+				"message": "Service Unavailable",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_504",
+			"aliases": [
+				"HTTP-504",
+				"Gateway Timeout"
+			],
+			"shield": {
+				"label": "HTTP 504",
+				"message": "Gateway Timeout",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_505",
+			"aliases": [
+				"HTTP-505",
+				"HTTP Version Not Supported"
+			],
+			"shield": {
+				"label": "HTTP 505",
+				"message": "HTTP Version Not Supported",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_506",
+			"aliases": [
+				"HTTP-506",
+				"Variant Also Negotiates"
+			],
+			"shield": {
+				"label": "HTTP 506",
+				"message": "Variant Also Negotiates",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_507",
+			"aliases": [
+				"HTTP-507",
+				"Insufficient Storage"
+			],
+			"shield": {
+				"label": "HTTP 507",
+				"message": "Insufficient Storage",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_508",
+			"aliases": [
+				"HTTP-508",
+				"Loop Detected"
+			],
+			"shield": {
+				"label": "HTTP 508",
+				"message": "Loop Detected",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_510",
+			"aliases": [
+				"HTTP-510",
+				"Not Extended"
+			],
+			"shield": {
+				"label": "HTTP 510",
+				"message": "Not Extended",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_511",
+			"aliases": [
+				"HTTP-511",
+				"Network Authentication Required"
+			],
+			"shield": {
+				"label": "HTTP 511",
+				"message": "Network Authentication Required",
+				"color": "red"
+			}
+		},
+		{
+			"name": "http_520",
+			"aliases": [
+				"HTTP-520",
+				"Web server is returning an unknown error"
+			],
+			"shield": {
+				"label": "HTTP 520",
+				"message": "Web server is returning an unknown error",
+				"color": "red"
+			}
+		}
+	]
+}

@@ -1,9 +1,9 @@
 # ShieldBadges makefile
 
 ## Root targets --------------------- ##
-all: brands
+all: brands httpstatus
 clean-all: clean generator.clean; -rm .pre .preflight-check
-clean: generator.clean brands.clean
+clean: generator.clean brands.clean httpstatus.clean
 prepare: .pre;
 
 ## Prepare -------------------------- ##
@@ -43,10 +43,11 @@ help:
 	@echo ""
 	@echo "* Categories:"
 	@echo "| {category}, {category}.clean, {category}.svg, and {category}.png respectively"
-	@echo "|> brands"
+	@echo "|> brands httpstatus"
 
 ## Sub makefiles -------------------- ##
 include brands.mk
+include httpstatus.mk
 
 ## ---------------------------------- ##
 .PHONY: all clean-all clean prepare help
