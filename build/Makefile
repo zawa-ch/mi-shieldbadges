@@ -1,12 +1,12 @@
 # ShieldBadges makefile
 
 ## Root targets --------------------- ##
-all: brands httpstatus
+all: brands httpstatus licenses;
 clean-all: clean generator.clean; -rm .pre .preflight-check; cmake --build build/ --target clean
-clean: generator.clean brands.clean httpstatus.clean
+clean: generator.clean brands.clean httpstatus.clean licenses.clean;
 prepare: .pre;
-all-svg: brands.svg httpstatus.svg;
-all-png: brands.png httpstatus.png;
+all-svg: brands.svg httpstatus.svg licenses.svg;
+all-png: brands.png httpstatus.png licenses.png;
 
 ## Prepare -------------------------- ##
 ## ビルドに使用するジェネレータなどの準備
@@ -47,11 +47,12 @@ help:
 	@echo ""
 	@echo "* Categories:"
 	@echo "| {category}, {category}.clean, {category}.svg, and {category}.png respectively"
-	@echo "|> brands httpstatus"
+	@echo "|> brands httpstatus licenses"
 
 ## Sub makefiles -------------------- ##
 include brands.mk
 include httpstatus.mk
+include licenses.mk
 
 ## ---------------------------------- ##
 .PHONY: all clean-all clean prepare all-svg all-png help
